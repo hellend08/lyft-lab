@@ -1,3 +1,243 @@
-/*
- * Estilos de tu proyecto
- */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+}
+body header.home {
+  background-image: url("../assets/images/hero.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body header.home section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+body header.home section:first-child {
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+body header.home section:first-child img {
+  width: 60px;
+  grid-column: 2/3;
+}
+body header.home section:first-child nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  grid-column: 8/13;
+}
+body header.home section:first-child nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+body header.home section:first-child nav ul li {
+  list-style: none;
+}
+body header.home section:first-child nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+body header.home section:first-child nav button {
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+}
+body header.home section form {
+  background-color: #FFFFFF;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  grid-column: 8/13;
+  height: 100%;
+  padding: 3rem 3.5rem;
+}
+body header.home section form legend {
+  color: #352384;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+body header.home section form h5 {
+  color: #352384;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+body header.home section form fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  width: 100%;
+}
+body header.home section form fieldset input {
+  border: none;
+  border-bottom: 1.5px solid #352384;
+  height: 30px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+body header.home section form div {
+  padding-bottom: 1.3rem;
+}
+body header.home section form div button {
+  background-color: #FF00BF;
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 1rem 0 0;
+  padding: 0.7rem 1rem;
+}
+body header.home section form div a {
+  font-size: 16px;
+  color: #696969;
+}
+body header.home section form p {
+  color: #696969;
+  font-size: 14px;
+}
+body main section {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+}
+body main section:first-child {
+  background: linear-gradient(#76278F, #2B1E66);
+  padding: 3rem 0;
+}
+body main section:first-child div {
+  grid-column: 3/7;
+  align-self: center;
+}
+body main section:first-child div article {
+  padding: 1rem 0;
+}
+body main section:first-child div article h4 {
+  font-size: 28px;
+  font-weight: 600;
+  padding-bottom: 0.7rem;
+  text-transform: uppercase;
+}
+body main section:first-child div article p {
+  font-size: 15px;
+}
+body main section:first-child picture {
+  grid-column: 8/15;
+  align-self: center;
+}
+body main section:first-child picture img {
+  width: 70%;
+}
+body main section.article-section {
+  color: #000000;
+}
+body main section.article-section article {
+  display: grid;
+  grid-column: 1/15;
+  grid-template-columns: repeat(20, 1fr);
+}
+body main section.article-section article div {
+  grid-column: 2/7;
+  padding: 2rem 0;
+}
+body main section.article-section article div h4 {
+  font-size: 28px;
+  font-weight: 600;
+  padding-bottom: 0.7rem;
+  text-transform: uppercase;
+}
+body main section.article-section article div p {
+  padding-top: 1rem;
+  font-size: 15px;
+  font-weight: 500;
+}
+body main section.article-section article iframe {
+  grid-column: 8/21;
+}
+body main section.article-section article.article-middle div {
+  grid-column: 15/20;
+}
+body main section.article-section article.article-middle iframe {
+  grid-column: 1/14;
+}
+body footer {
+  background-color: #333447;
+  display: grid;
+  row-gap: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 3rem 0;
+}
+body footer nav {
+  grid-column: 3/10;
+  padding-bottom: 1.5rem;
+}
+body footer nav ul li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+body footer nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+body footer nav ul li a:hover {
+  color: #FF00BF;
+}
+body footer nav ul li img {
+  width: 110px;
+}
+body footer nav ul.footer-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer nav ul.sub-title li {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+body footer section {
+  grid-column: 4/10;
+}
+body footer section ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+body footer section ul li {
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+body footer hr {
+  grid-column: 4/10;
+}
+body footer p {
+  font-size: 12px;
+  grid-column: 4/10;
+  justify-self: center;
+  padding-top: 1.5rem;
+}/*# sourceMappingURL=main.css.map */
